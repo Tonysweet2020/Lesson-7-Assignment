@@ -116,6 +116,32 @@ body{
   font-family: sans-serif;
 }
 
+/*---------------- A11Y Features ----------------------------------------------------*/
+nav a{
+  padding: 0.6rem;
+  margin: 0.6rem;
+}
+
+.hide-skip-link{
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hide-skip-link:focus{
+  left: 0;
+}
+
+.sr-only{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
 footer{
    background-image: url('https://raw.githubusercontent.com/UWFront-End-Cert/html100/master/lesson07-styleguide/styleguide%20design%20elements/footerImage.jpg');
    color: white;
